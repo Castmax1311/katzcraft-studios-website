@@ -34,6 +34,7 @@ ul li a {
   color: white;
   padding: 10px;
   transition: 0.5s ease;
+  display: block;
 }
 
 ul:hover li a {
@@ -103,4 +104,144 @@ button span {
 
 button:hover span {
   transform: translateX(-5%) skew(-10deg);
+}
+:root {
+  --clr-primary: rgb(2, 10, 235);
+
+  --duration: 1.5s;
+  --initial-delay: 1s;
+  --after-el-delay: calc((var(--duration) * 0.4));
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #161616;
+  color: white;
+  margin: 0 auto;
+  height: 100vh;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+p {
+  color: #d3d3d3;
+  line-height: 1.5;
+  font-size: 30px;
+}
+
+.animate h1,
+.animate p {
+  text-align: center;
+  padding: 12px;
+  opacity: 0;
+  animation: text-reveal 0.1s calc(var(--duration) + var(--initial-delay))
+    forwards;
+}
+.img-container {
+  width: 600px;
+  aspect-ratio: 1.5 / 0.8;
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.animate {
+  position: relative;
+  margin-block: 0 12px;
+}
+.animate::before,
+.animate::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  background-color: var(--clr-primary);
+  z-index: 10;
+}
+.animate::after {
+  background-color: white;
+}
+
+.animate-ltr.animate::before,
+.animate-ltr.animate::after {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  animation: left-to-right var(--duration) var(--initial-delay) ease;
+}
+.animate-ltr.animate::after {
+  animation-delay: calc(var(--after-el-delay) + var(--initial-delay));
+}
+.animate-rtl.animate::before,
+.animate-rtl.animate::after {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  animation: right-to-left var(--duration) ease;
+  animation-delay: calc((var(--duration) * 0.5) + var(--initial-delay));
+}
+.animate-rtl.animate::after {
+  animation-delay: calc(
+    (var(--duration) * 0.5 + var(--after-el-delay)) + var(--initial-delay)
+  );
+}
+
+@keyframes left-to-right {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  60% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes right-to-left {
+  0% {
+    width: 0;
+    right: 0;
+  }
+  60% {
+    width: 100%;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    right: 100%;
+  }
+}
+@keyframes text-reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.follow {
+  font-size: 22px;
+  margin-top: 200px;
+}
+.follow a {
+  color: var(--clr-primary);
 }
