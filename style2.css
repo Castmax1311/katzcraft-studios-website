@@ -19,13 +19,15 @@ h1 {
 h2 {
     color: rgb(38, 161, 219);
     text-align: center;
+    font-family: arial;
 }
 h3 {
 	color: #1042cc;
 	text-align: center;
+	font-family: arial;
 }
 h4 {
-      color: #0b37b0
+      color: #0b37b0;
 }
 nav {
  	position: fixed;
@@ -78,7 +80,7 @@ button div {
 button a {
   position: relative;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-weight: 700;
   color: #ece8e1;
   text-transform: uppercase;
