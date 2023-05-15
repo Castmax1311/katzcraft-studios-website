@@ -12,6 +12,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
 h1 {
 	color: #043ede;
 	font-size: 35px;
