@@ -169,6 +169,7 @@ button2 {
 
 .button2-arounder {
   font-size: 2rem;
+  font-family: arial;
   background: hsl(236deg, 98%, 50%);
   color: hsl(190deg, 10%, 95%);
   
