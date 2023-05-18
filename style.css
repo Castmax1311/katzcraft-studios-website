@@ -12,6 +12,53 @@ body {
   justify-content: center;
   align-items: center;
 }
+p {
+  	color: #d3d3d3;
+  	line-height: 1.5;
+  	font-size: 30px;
+}
+h1 {
+	text-align: center;
+	font-family: arial;
+	font-size: 35px;
+}
+h2 {
+    	color: rgb(38, 161, 219);
+    	text-align: center;
+    	font-family: arial;
+    	font-size: 30px;
+}
+h3 {
+	color: #1042cc;
+	text-align: center;
+	font-family: arial;
+	font-size: 25px;
+}
+h4 {
+      color: #1710e3;
+	text-align: center;
+	font-family: arial;
+}
+h5 {
+      color: #1710e3;
+	text-align: center;
+	font-family: arial;
+	font-size: 30px;
+}
+h6 {
+      color: rgb(38, 161, 219);
+	text-align: center;
+	font-family: arial;
+	font-size: 25px;
+}
+.centerColour {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 50%;
+    font-size: 50px;
+}
 nav {
  	position: fixed;
  	top: 0;
@@ -63,7 +110,7 @@ button div {
 button a {
   position: relative;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2.75rem;
   font-weight: 700;
   color: #ece8e1;
   text-transform: uppercase;
@@ -137,11 +184,6 @@ h1 {
   font-size: 56px;
   font-weight: 800;
   text-transform: uppercase;
-}
-p {
-  color: #d3d3d3;
-  line-height: 1.5;
-  font-size: 30px;
 }
 
 .animate h1,
