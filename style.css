@@ -51,13 +51,27 @@ h6 {
 	font-family: arial;
 	font-size: 25px;
 }
-.centerColour {
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.center2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
-    height: 50%;
-    font-size: 50px;
+}
+
+centercolour {
+    	display: flex;
+	justify-content: center;
+	align-items: center;
+    	margin-left: auto;
+    	margin-right: auto;
+    	width: 30%;
+    	height: 100vh;
+    	font-size: 50px;
 }
 nav {
  	position: fixed;
@@ -172,14 +186,12 @@ body {
   background-color: #161616;
   color: white;
   margin: 0 auto;
-  height: 100vh;
+  height: 110vh;
   max-width: 900px;
-  display: flex;
-  flex-direction: column;
+  display: block;
   justify-content: center;
   align-items: center;
 }
-
 h1 {
   font-size: 56px;
   font-weight: 800;
