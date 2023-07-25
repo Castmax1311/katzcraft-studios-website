@@ -30,7 +30,7 @@ h4 {
       color: #0b37b0;
 }
 nav {
- 	position: fixed;
+ 	position: absolute;
  	top: 0;
 }
 ul {
@@ -130,11 +130,12 @@ button:hover span {
     height: 80%;
   }
 .center2 {
+    position: absolute;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 30%;
-    height: 50%;
+    height: 60%;
 }
 .center3 {
     width: 15%;
@@ -143,6 +144,14 @@ button:hover span {
 .center4 {
     width: 15%;
     height: 180%;
+}
+.center5 {
+    algin: left;
+    display: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 50%;
 }
   .btnd {
     background-color: rgb(30, 64, 255);
