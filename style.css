@@ -75,7 +75,7 @@ centercolour {
 }
 nav {
  	position: fixed;
- 	top: 0;
+ 	top: 3;
 }
 ul {
   font-family: "Chivo Mono", monospace;
@@ -124,7 +124,7 @@ button div {
 button a {
   position: relative;
   text-decoration: none;
-  font-size: 2.75rem;
+  font-size: 2.65rem;
   font-weight: 700;
   color: #ece8e1;
   text-transform: uppercase;
