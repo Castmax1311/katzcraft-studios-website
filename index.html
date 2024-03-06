@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Katzcraft Studios</title>
+    <link rel="stylesheet" href="style3.css"/>
+    <link rel="icon" type="image/png" href="Katzcraft_Studios_Logo.png">
+</head>
+<body>
+	<nav>
+  	<ul>
+    		<li><a class="activenb" href="index.html">Home</a></li>
+    		<li><a href="#">Social Media</a></li>
+    		<li><a href="#">Projects</a></li>
+		<li><a href="#">Tools</a></li>
+    		<li><a href="#">Downloads</a></li>
+  	</ul>
+	</nav>
+    <style>
+        /* Zentrieren des Kastens */
+        .overlay {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Hintergrundfarbe mit Transparenz */
+            z-index: 9999; /* sicherstellen, dass der Kasten immer im Vordergrund bleibt */
+        }
+
+        /* Stil des Kastens */
+        .box {
+            background-color: white;
+            padding: 40px; /* Größerer Innenabstand */
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            width: 60%; /* Größere Breite */
+            max-width: 600px; /* Maximalbreite */
+            height: auto; /* Automatische Höhe */
+        }
+
+        /* Schließen-Symbol */
+        .close {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="box">
+            <h2>Welcome on our website!</h2>
+	    <p>This website is no longer available since 06.03.2024</p><br>
+            <p>Click below to visit our new website</p>
+            <a href="https://sites.google.com/view/katzcraftstudios/home">To the new website</a>
+        </div>
+    </div>
+
+    <script>
+        // Funktion zum Schließen des Overlays
+        function closeOverlay() {
+            document.querySelector('.overlay').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
